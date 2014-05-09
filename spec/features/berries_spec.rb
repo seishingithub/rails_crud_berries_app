@@ -15,5 +15,9 @@ feature "Managing Berries" do
     expect(page).to have_content('red')
     expect(page).to have_content(5)
 
+    click_on 'raspberry'
+    expect(page).to have_content('raspberry')
+    expect(page).to have_content('red')
+    expect(page).to have_content(5)
   end
 end

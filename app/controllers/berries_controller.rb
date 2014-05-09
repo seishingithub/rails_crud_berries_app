@@ -17,4 +17,8 @@ class BerriesController < ApplicationController
     redirect_to '/berries'
   end
 
+  def show
+    @berry = Berry.find(params[:id])
+  end
+
 end

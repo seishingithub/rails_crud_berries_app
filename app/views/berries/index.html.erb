@@ -10,14 +10,14 @@
     <th>Berry Rating</th>
   </tr>
   </thead>
-  <body>
+  <tbody>
   <% @berries.each do |berry| %>
-    <a href="/berries/<%= berry.id %>"></a>
-    <%= berry.berry_type %>
-    <a href="/berries/<%= berry.id %>"></a>
-    <%= berry.berry_color %>
-    <a href="/berries/<%= berry.id %>"></a>
-    <%= berry.berry_rating %>
+    <a href="/berries/<%= berry.id %>">
+    <%= berry.berry_type %></a>
+    <a href="/berries/<%= berry.id %>">
+    <%= berry.berry_color %></a>
+    <a href="/berries/<%= berry.id %>">
+    <%= berry.berry_rating %></a>
   <% end %>
-  </body>
+  </tbody>
 </table>

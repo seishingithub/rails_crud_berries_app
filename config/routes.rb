@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   post '/berries', to: 'berries#create'
 
+  get '/berries/:id', to: 'berries#show'
+
 end
