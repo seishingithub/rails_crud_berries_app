@@ -1,0 +1,23 @@
+<a href="/berries/new">Add New Berry</a>
+
+<h2>Berries</h2>
+
+<table>
+  <thead>
+  <tr>
+    <th>Berry Type</th>
+    <th>Berry Color</th>
+    <th>Berry Rating</th>
+  </tr>
+  </thead>
+  <body>
+  <% @berries.each do |berry| %>
+    <a href="/berries/<%= berry.id %>"></a>
+    <%= berry.berry_type %>
+    <a href="/berries/<%= berry.id %>"></a>
+    <%= berry.berry_color %>
+    <a href="/berries/<%= berry.id %>"></a>
+    <%= berry.berry_rating %>
+  <% end %>
+  </body>
+</table>
