@@ -10,4 +10,8 @@ Rails.application.routes.draw do
 
   get '/berries/:id', to: 'berries#show'
 
+  get '/berries/:id/edit', to: 'berries#edit'
+
+  put '/berries/:id', to: 'berries#update'
+
 end
