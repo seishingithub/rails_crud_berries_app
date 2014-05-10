@@ -34,7 +34,10 @@ feature 'Managing Berries' do
     expect(page).to have_content('blue')
     expect(page).to have_content(4)
 
-
+    click_on 'Delete'
+    expect(page).to have_no_content('blueberry')
+    expect(page).to have_no_content('blue')
+    expect(page).to have_no_content(4)
 
   end
 end

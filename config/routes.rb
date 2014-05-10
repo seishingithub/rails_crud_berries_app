@@ -14,4 +14,6 @@ Rails.application.routes.draw do
 
   put '/berries/:id', to: 'berries#update'
 
+  delete '/berries/:id', to: 'berries#destroy'
+
 end

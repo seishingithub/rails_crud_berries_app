@@ -10,3 +10,9 @@
 </dl>
 
 <a href="/berries/<%= @berry.id %>/edit">Edit</a>
+
+<form action="/berries/<%= @berry.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  <input type="submit" value="Delete">
+</form>

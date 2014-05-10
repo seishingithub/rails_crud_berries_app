@@ -34,4 +34,9 @@ class BerriesController < ApplicationController
     redirect_to "/berries/#{@berry.id}"
   end
 
+  def destroy
+    @berry = Berry.find(params[:id])
+    @berry.destroy
+    redirect_to '/'
+  end
 end
